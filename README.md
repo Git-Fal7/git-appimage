@@ -3,16 +3,27 @@ grabs appimages from github's releases, and installs them in /opt/appimages/
 
 # what it actually does
 
+> 
 > send a request to github's api using ``curl``.
+> 
 > grab everything needed from the request.
+> 
 > grab an appimage from the repo releases.
+> 
 > make it executable.
+> 
 > copy it to ``/opt/appimages``.
+> 
 > extract it using ``--appimage-extract`` in a folder called ``squashfs-root/``.
+> 
 > get every``.desktop``, ``.png`` and ``.svg`` in ``squashfs-root/``.
+> 
 > copy the images to ``/usr/share/pixmaps``.
+> 
 > modify the original ``.desktop`` file to execute from ``/opt/appimages``.
+> 
 > put the modified ``.desktop`` file to ``/usr/share/applications/`` with the appimage's name.
+> 
 
 # building
 you should have rustup installed and fully working
