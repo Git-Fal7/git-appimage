@@ -150,6 +150,7 @@ fn main() {
 			}
 
 			fs::remove_dir_all("squashfs-root/").ok();
+			println!("sucessfully installed");
 		}
 	}
 }
