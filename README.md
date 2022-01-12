@@ -38,8 +38,7 @@ cargo build --release
 cd target/release/
 ```
 
-# usage
-requires root permissions.
+# usage (requires root permissions)
 
 ``git-appimage [name of repo]``
 
